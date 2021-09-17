@@ -1,0 +1,49 @@
+:root {
+    --title-color: #322156;
+    --primary-color: #34cb79;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #f0f0f5;
+    -webkit-font-smoothing: antialiased
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: var(--title-color);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@mixin respond($breakpoint) {
+    @if ($breakpoint==phone) {
+      @media (max-width: 899px) {
+        @content;
+      }
+    } @else if ($breakpoint==tablet) {
+      @media (min-width: 650px) {
+        @content;
+      }
+    } @else if ($breakpoint==desktop) {
+      @media (min-width: 1050px) {
+        @content;
+      }
+    } @else if ($breakpoint==big-desktop) {
+      @media (min-width: 1600px) {
+        @content;
+      }
+    }
+}
+  

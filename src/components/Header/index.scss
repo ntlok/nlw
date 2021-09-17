@@ -1,0 +1,61 @@
+@mixin respond($breakpoint) {
+  @if ($breakpoint==phone) {
+    @media (max-width: 899px) {
+      @content;
+    }
+  } @else if ($breakpoint==tablet) {
+    @media (max-width: 650px) {
+      @content;
+    }
+  } @else if ($breakpoint==desktop) {
+    @media (min-width: 1050px) {
+      @content;
+    }
+  } @else if ($breakpoint==big-desktop) {
+    @media (min-width: 1600px) {
+      @content;
+    }
+  }
+}
+
+#header-component {
+	width: 100%;
+	max-width: 1100px;
+  margin: 20px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+	font-family: 'Roboto', sans-serif;
+	
+  
+
+  a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    height: 50px;
+		font-weight: bold;
+    
+
+    
+
+    img {
+      margin-right: 10px;
+			height: 20px;
+    }
+
+    span {
+			display: flex;
+			line-height: 20px;
+			height: 20px;
+			font-family: 'Roboto', sans-serif;
+      font-weight: 600;
+
+      @include respond(tablet){
+        overflow-x: hidden;
+        max-width: 40px;
+      }
+    }
+  }
+}

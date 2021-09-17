@@ -1,0 +1,253 @@
+#create-point {
+  margin: 0 auto;
+}
+
+#create-point .content {
+  width: 90%;
+  max-width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (max-width: 650px) {
+  #create-point .content h1 {
+    font-size: 28px;
+  }
+}
+
+#create-point .content main {
+  background: white;
+  width: 100%;
+  max-width: 880px;
+  margin: 40px auto 0;
+  padding: 60px;
+  border-radius: 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media (max-width: 650px) {
+  #create-point .content main {
+    padding: 60px 20px;
+  }
+}
+
+#create-point .content main fieldset {
+  border: none;
+}
+
+#create-point .content main fieldset .field-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 650px) {
+  #create-point .content main fieldset .field-group {
+    display: block;
+  }
+}
+
+#create-point .content main fieldset .field-group .field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin-bottom: 20px;
+}
+
+#create-point .content main fieldset .field-group .field.double {
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+#create-point .content main fieldset .field-group .field label {
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: gray;
+}
+
+#create-point .content main fieldset .field-group .field input, #create-point .content main fieldset .field-group .field select {
+  height: 54px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f4f4f4;
+  padding: 10px;
+}
+
+#create-point .content main fieldset .field-group .field + .field {
+  margin-left: 20px;
+}
+
+@media (max-width: 650px) {
+  #create-point .content main fieldset .field-group .field + .field {
+    margin-left: 0;
+  }
+}
+
+#create-point .content main legend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+@media (max-width: 650px) {
+  #create-point .content main legend {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  #create-point .content main legend h2 {
+    font-size: 18px;
+  }
+  #create-point .content main legend span {
+    max-width: 110px;
+    font-size: 14px;
+  }
+}
+
+#create-point .content main legend .active {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+#create-point .content main legend h2 {
+  margin: 40px 0;
+  font-size: 18px;
+}
+
+#create-point .content main .itens-coleta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 40px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+  #create-point .content main .itens-coleta {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+}
+
+#create-point .content main .itens-coleta li {
+  list-style: none;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 225px;
+  height: 225px;
+  background-color: rgba(74, 146, 74, 0.151);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  #create-point .content main .itens-coleta li {
+    max-width: 180px;
+    height: 150px;
+    min-height: 150px;
+    text-align: center;
+  }
+  #create-point .content main .itens-coleta li img {
+    width: 50px;
+  }
+  #create-point .content main .itens-coleta li p {
+    font-size: 14px;
+  }
+}
+
+#create-point .content main .itens-coleta li.active {
+  border: 1px solid rgba(3, 116, 3, 0.76);
+  background: rgba(11, 116, 11, 0.158);
+}
+
+#create-point .content main .itens-coleta li img {
+  margin-bottom: 20px;
+  pointer-events: none;
+}
+
+#create-point .content main .itens-coleta li p {
+  font-weight: 600;
+  color: var(--title-color);
+  pointer-events: none;
+}
+
+@media (max-width: 650px) {
+  #create-point .content main .button-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+#create-point .content main .button-content button {
+  width: 240px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  background: var(--primary-color);
+  color: white;
+  font-weight: 600;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-transition: 200ms ease;
+  transition: 200ms ease;
+  margin-top: 40px;
+}
+
+#create-point .content main .button-content button:hover {
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
+}
+/*# sourceMappingURL=Create-point.css.map */
